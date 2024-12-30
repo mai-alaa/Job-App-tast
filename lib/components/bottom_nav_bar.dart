@@ -49,14 +49,17 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
           showSelectedLabels: true,
           showUnselectedLabels: true,
           items: [
-                       BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsArrangeCircle2), label: 'خدمات'),
+                       BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsArrangeCircle2,colorFilter:  ColorFilter.mode(
+                  selectedIndex == 0 ? kPrimaryColor : darkerGray,
+                  BlendMode.srcIn,
+                ),), label: 'خدمات',),
         
-          BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsTaskSquare), label: 'وظائفي'),
-                                    BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsObject), label: 'تصفح'),
+          BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsTaskSquare,colorFilter: ColorFilter.mode(selectedIndex==1?kPrimaryColor : darkerGray, BlendMode.srcIn),), label: 'وظائفي'),
+           BottomNavigationBarItem(icon: SvgPicture.asset(Assets.svgObject,colorFilter: ColorFilter.mode(selectedIndex==2?kPrimaryColor : darkerGray, BlendMode.srcIn),), label: 'تصفح'),
         
-                           BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsMessages3), label: 'المحادثات'),
+                           BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsMessages3,colorFilter: ColorFilter.mode(selectedIndex==3?kPrimaryColor : darkerGray, BlendMode.srcIn),), label: 'المحادثات'),
         
-                  BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsProfile), label: 'حسابي'),
+                  BottomNavigationBarItem(icon: SvgPicture.asset(Assets.iconsProfile,colorFilter: ColorFilter.mode(selectedIndex==4?kPrimaryColor : darkerGray, BlendMode.srcIn),), label: 'حسابي'),
         
         
         ]),

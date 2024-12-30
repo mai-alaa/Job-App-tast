@@ -62,6 +62,14 @@ class Assets {
   /// assets/svg/cover.svg
   static const String svgCover = "assets/svg/cover.svg";
 
+  /// Assets for svgObject
+  /// assets/svg/Object.svg
+  static const String svgObject = "assets/svg/Object.svg";
+
+  /// Assets for svgObject2x
+  /// assets/svg/Object@2x.svg
+  static const String svgObject2x = "assets/svg/Object@2x.svg";
+
   /// Assets for svgPerson
   /// assets/svg/person.svg
   static const String svgPerson = "assets/svg/person.svg";
